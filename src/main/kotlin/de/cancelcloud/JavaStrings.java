@@ -1,4 +1,4 @@
-package de.cancelcloud.javastrings;
+package de.cancelcloud;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
