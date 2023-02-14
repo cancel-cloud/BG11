@@ -1,7 +1,0 @@
-function onClickToDataConvert() {
-
-}
-
-function onClickToLenghtConvert() {
-
-}

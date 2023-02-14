@@ -219,7 +219,6 @@ public class JavaStrings {
                 i++;
             }
         }
-
         System.out.println("The longest substring: " + longestSubstring);
         System.out.println("The longest substring length: " + maxLength);
     }
