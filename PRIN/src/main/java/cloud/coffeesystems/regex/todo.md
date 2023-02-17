@@ -13,5 +13,3 @@ checkNameValidity() method.
 Return true of the name is valid, else return false.
 
 - [ ] Test the functionalities using the main method of the Tester class.
-
-

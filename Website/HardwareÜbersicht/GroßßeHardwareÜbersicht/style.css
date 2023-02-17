@@ -1,0 +1,24 @@
+
+h1 {
+    text-align: center;
+    color: #171717;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-size: cover;
+}
+
+.grid-item {
+    background-color: #171717;
+    padding: 25px;
+    background-image: url("images/dataimage.jpg");
+}
+
+.title-container {
+    text-align: center;
+}
