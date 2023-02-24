@@ -1,0 +1,177 @@
+body {
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    /*background almost black but more gray blue*/
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.topSection {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectDescription {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.long {
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.components {
+    /*make the in a row as long as they fit*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.component {
+    margin: 15px;
+    background: transparent;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    /*make the image not stretch*/
+    object-fit: cover;
+}
+
+.snip1433 {
+    font-family: 'Fauna One', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 315px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+
+figure.snip1433 {
+    font-family: 'Fauna One', Arial, sans-serif;
+    position: relative;
+    height: 300px;
+    width: 500px;
+
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+figure.snip1433 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+figure.snip1433 img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    opacity: 1;
+    width: 100%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+figure.snip1433 figcaption {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    padding: 20px 30px;
+}
+figure.snip1433 h2,
+figure.snip1433 p {
+    margin: 0;
+    width: 100%;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+}
+figure.snip1433 h2 {
+    font-family: 'Playfair Display', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+figure.snip1433 p {
+    font-size: 0.8em;
+}
+figure.snip1433 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+figure.snip1433:hover img,
+figure.snip1433.hover img {
+    width: 60%;
+    top: -10%;
+    height: 60%;
+}
+figure.snip1433:hover figcaption h2,
+figure.snip1433.hover figcaption h2,
+figure.snip1433:hover figcaption p,
+figure.snip1433.hover figcaption p {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+}
