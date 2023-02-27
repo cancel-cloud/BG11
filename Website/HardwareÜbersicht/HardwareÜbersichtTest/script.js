@@ -14,7 +14,7 @@ const cardData = [
 ];
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     console.log("loadme() called");
 
     // print the first element of the cardData array to the console

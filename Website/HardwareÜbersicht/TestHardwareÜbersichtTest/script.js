@@ -23,10 +23,10 @@ const cardData = [
 ];
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const cards = document.createElement("grid-container");
     cards.classList.add("grid-container");
-    
+
     for (let i = 0; i < cardData.length; i++) {
         const card = document.createElement("div");
         card.classList.add("card");
@@ -40,15 +40,15 @@ document.addEventListener("DOMContentLoaded", function() {
         card.style.backgroundImage = `url(${cardData[i].image})`;
         card.style.backgroundSize = "cover";
         card.style.backgroundPosition = "center";
-        
+
         cards.appendChild(card);
     }
 
     document.body.appendChild(cards);
-    
+
 });
 
-document.addEventListener('mouseover', function(event) {
+document.addEventListener('mouseover', function (event) {
     //check wich item is hovered
     const hovered = document.getElementById(event.target.id);
     //get all id's from cardData
@@ -57,6 +57,6 @@ document.addEventListener('mouseover', function(event) {
     document.getElementById(event.target.id).style.display = "none";
     console.log("hover");
     if (cardDataIds.includes(event.target.id)) {
-        
+
     }
 });

@@ -116,12 +116,14 @@ figure.snip1433 {
     line-height: 1.4em;
     font-size: 16px;
 }
+
 figure.snip1433 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
+
 figure.snip1433 img {
     position: absolute;
     top: 0%;
@@ -131,12 +133,14 @@ figure.snip1433 img {
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
 }
+
 figure.snip1433 figcaption {
     position: absolute;
     width: 100%;
     top: 50%;
     padding: 20px 30px;
 }
+
 figure.snip1433 h2,
 figure.snip1433 p {
     margin: 0;
@@ -145,14 +149,17 @@ figure.snip1433 p {
     transform: translateY(-20px);
     opacity: 0;
 }
+
 figure.snip1433 h2 {
     font-family: 'Playfair Display', Arial, sans-serif;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+
 figure.snip1433 p {
     font-size: 0.8em;
 }
+
 figure.snip1433 a {
     position: absolute;
     top: 0;
@@ -161,12 +168,14 @@ figure.snip1433 a {
     right: 0;
     z-index: 1;
 }
+
 figure.snip1433:hover img,
 figure.snip1433.hover img {
     width: 60%;
     top: -10%;
     height: 60%;
 }
+
 figure.snip1433:hover figcaption h2,
 figure.snip1433.hover figcaption h2,
 figure.snip1433:hover figcaption p,

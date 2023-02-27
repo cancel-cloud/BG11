@@ -76,5 +76,5 @@ componentData.forEach(item => {
         </figcaption>
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample70.jpg" alt="sample70" /> `;
     entriesDiv.appendChild(figureElem);
-    
+
 })
