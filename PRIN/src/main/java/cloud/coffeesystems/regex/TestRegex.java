@@ -1,7 +1,6 @@
 package cloud.coffeesystems.regex;
 
 import java.util.Scanner;
-
 import static cloud.coffeesystems.regex.Checker.checkWebAddressValidity;
 
 public class TestRegex {
@@ -20,7 +19,7 @@ public class TestRegex {
 
 
         //Task 3
-        boolean isValid = checkWebAddressValidity("https://www.example.com");
+        boolean isValid = checkWebAddressValidity("https://www.github.com");
         if (isValid) {
             System.out.println("Web address valid");
         } else {
@@ -28,7 +27,7 @@ public class TestRegex {
         }
 
         //Task 4
-        boolean isProductNameValid = Checker.Shipment.checkProductNameValidity("Product Name");
+        boolean isProductNameValid = Checker.Shipment.checkProductNameValidity("Klopapierhalter im Set");
         if (isProductNameValid) {
             System.out.println("Product name valid");
         } else {
