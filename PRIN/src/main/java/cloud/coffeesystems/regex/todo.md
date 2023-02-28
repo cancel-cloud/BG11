@@ -8,7 +8,7 @@ checkNameValidity() method.
 - The first character of each word of the name should be upper case alphabet
 - Each word should be separated by a space
 - The name should not start or end with a space
-- Special charaacters should not be allowed
+- Special characters should not be allowed
 
 Return true of the name is valid, else return false.
 
