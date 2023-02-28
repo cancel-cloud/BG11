@@ -20,8 +20,8 @@ public class Checker {
 
     //Task 3
     public static boolean checkWebAddressValidity(String webAddress) {
-        String pattern = "^(https?:\\/\\/)?(www\\.)?[a-zA-Z0-9]+\\.(com|org|net)$";
-
+        String pattern = "^(https?:\\/\\/)?(www\\.)?[a-zA-Z0-9]+\\.[a-zA-Z0-9\\-]+\\.(com|org|net|cloud|coffee)$";
+        
         return webAddress.matches(pattern);
     }
 
