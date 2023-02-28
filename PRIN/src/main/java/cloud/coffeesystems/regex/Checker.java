@@ -27,7 +27,7 @@ public class Checker {
     }
 
     //Task 4
-    public class Shipment {
+    public static class Shipment {
         public static boolean checkProductNameValidity(String productName) {
             String pattern = "^[a-zA-Z]+(\\s[a-zA-Z]+){1,2}$";
             return productName.matches(pattern);
@@ -38,10 +38,4 @@ public class Checker {
             return productId.matches(pattern);
         }
     }
-
-
-
-
-
-
 }
