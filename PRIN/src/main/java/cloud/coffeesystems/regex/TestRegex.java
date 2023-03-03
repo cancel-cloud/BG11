@@ -27,7 +27,7 @@ public class TestRegex {
         }
 
         //Task 4
-        boolean isProductNameValid = Checker.Shipment.checkProductNameValidity("Klopapierhalter im Set");
+        boolean isProductNameValid = Checker.Shipment.checkProductNameValidity("Gurkensalat 1kg");
         if (isProductNameValid) {
             System.out.println("Product name valid");
         } else {
