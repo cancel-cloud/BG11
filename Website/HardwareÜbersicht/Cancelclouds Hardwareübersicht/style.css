@@ -1,13 +1,31 @@
 body {
     padding: 30px;
     font-family: 'Poppins', sans-serif;
-    background: url("Gradient-Background.png");
-    background-size: cover;
+    /*background: url("Gradient-Background.png");*/
+
+    /*decent gradient*/
+    background: #800080;
+    background: -webkit-linear-gradient(to right, #e711e7, #0ea5ff);
+    background: linear-gradient(to right, #e711e7, #0ea5ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
     display: flex;
     justify-content: start;
     align-items: center;
-    min-height: 100vh;
     flex-direction: column;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .topSection {
@@ -72,6 +90,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 .component {
@@ -180,17 +199,17 @@ figure.snip1433.hover figcaption h2,
 figure.snip1433:hover figcaption p,
 figure.snip1433.hover figcaption p,
 figure.snip1433:hover figcaption a,
-figure.snip1433.hover figcaption a{
+figure.snip1433.hover figcaption a {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
 }
 
 footer {
-    background: rgba( 128, 0, 128, 0.05 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
+    background: rgba(128, 0, 128, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 15px;
-    padding: 15px;
+    padding: 25px;
 }

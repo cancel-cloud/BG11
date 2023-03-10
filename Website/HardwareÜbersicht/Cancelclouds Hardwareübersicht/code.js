@@ -17,7 +17,7 @@ const componentData = [
         title: 'RAM',
         img: 'https://images.unsplash.com/photo-1542978709-19c95dc3bc7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
         short: "Random Access Memory",
-        long: "The RAM is used for storing data in a place, wich is fastly accessible. It is the short-term memory of the computer.",
+        long: "The RAM is used for storing data in a place, which is fastly accessible. It is the short-term memory of the computer.",
         url: "https://www.youtube.com/watch?v=6pp_krChw_A"
     },
     {
