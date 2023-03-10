@@ -1,8 +1,8 @@
 body {
     padding: 30px;
     font-family: 'Poppins', sans-serif;
-    /*background almost black but more gray blue*/
-    background-color: #1c1c1c;
+    background: url("Gradient-Background.png");
+    background-size: cover;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #1c1c1c;
+    background: transparent;
     margin-bottom: 20px;
 }
 
@@ -67,7 +67,6 @@ body {
 }
 
 .components {
-    /*make the in a row as long as they fit*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -86,7 +85,6 @@ body {
     background-size: cover;
     background-position: center;
     border-radius: 25px;
-    /*make the image not stretch*/
     object-fit: cover;
 }
 
@@ -126,7 +124,7 @@ figure.snip1433 * {
 
 figure.snip1433 img {
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 50%;
     opacity: 1;
     width: 100%;
@@ -142,7 +140,8 @@ figure.snip1433 figcaption {
 }
 
 figure.snip1433 h2,
-figure.snip1433 p {
+figure.snip1433 p,
+figure.snip1433 a {
     margin: 0;
     width: 100%;
     -webkit-transform: translateY(-20px);
@@ -179,8 +178,19 @@ figure.snip1433.hover img {
 figure.snip1433:hover figcaption h2,
 figure.snip1433.hover figcaption h2,
 figure.snip1433:hover figcaption p,
-figure.snip1433.hover figcaption p {
+figure.snip1433.hover figcaption p,
+figure.snip1433:hover figcaption a,
+figure.snip1433.hover figcaption a{
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
+}
+
+footer {
+    background: rgba( 128, 0, 128, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 15px;
+    padding: 15px;
 }
