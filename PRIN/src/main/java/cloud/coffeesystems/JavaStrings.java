@@ -1,4 +1,5 @@
 package cloud.coffeesystems;
+
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -47,7 +48,7 @@ public class JavaStrings {
         String task10_2_2 = "example.com";
         equalsStringBuffer(task10_1_1, task10_1_2);
         //task 11
-        char[] arr_num = new char[] { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        char[] arr_num = new char[]{'1', '2', '3', '4', '5', '6', '7', '8', '9'};
         mixIntString(arr_num);
         //task 12
         // does String end with "se"?
@@ -71,7 +72,7 @@ public class JavaStrings {
         //print date with custom format
         printCurrentDate();
         //task 16
-        String task16_1= "Im the default String";
+        String task16_1 = "Im the default String";
         countBytes(task16_1);
         //task 17
         getCharArray("Im the default String");
@@ -184,7 +185,7 @@ public class JavaStrings {
         }
     }
 
-    public static void checkequality (String str) {
+    public static void checkequality(String str) {
         {
             String str1 = "Java Exercises";
             String str2 = new StringBuffer("Java").append(" Exercises").toString();

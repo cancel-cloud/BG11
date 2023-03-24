@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Ketten {
 
 
-
     // Task 2
     public class Main {
         public static void main(String[] args) {
@@ -65,9 +64,6 @@ public class Ketten {
         String reversed = revert(s);
         return s.equals(reversed);
     }
-
-
-
 
 
     public static boolean istCharInString(String s, char c) {

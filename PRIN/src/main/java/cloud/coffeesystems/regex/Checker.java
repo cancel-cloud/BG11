@@ -1,11 +1,12 @@
 package cloud.coffeesystems.regex;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Checker {
 
     public static boolean checkNameValidity(String password) {
-        String regex="^(?!.*\\s$)[A-Z][a-zA-Z ]{0,28}[a-zA-Z]$";
+        String regex = "^(?!.*\\s$)[A-Z][a-zA-Z ]{0,28}[a-zA-Z]$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
         return matcher.find();
@@ -21,7 +22,7 @@ public class Checker {
     //Task 3
     public static boolean checkWebAddressValidity(String webAddress) {
         String pattern = "^(https?:\\/\\/)?(www\\.)?[a-zA-Z0-9]+\\.[a-zA-Z0-9\\-]+\\.(com|org|net|cloud|coffee)$";
-        
+
         return webAddress.matches(pattern);
     }
 

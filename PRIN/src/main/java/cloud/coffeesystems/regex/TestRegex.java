@@ -1,6 +1,7 @@
 package cloud.coffeesystems.regex;
 
 import java.util.Scanner;
+
 import static cloud.coffeesystems.regex.Checker.checkWebAddressValidity;
 
 public class TestRegex {
@@ -9,12 +10,12 @@ public class TestRegex {
         Scanner input = new Scanner(System.in);
         boolean running = true;
         //while (running) {
-            String tmp = input.nextLine();
-            if (tmp.equals("exit")) {
-                System.out.println("Testen beendet");
-                running = false;
-            }
-            System.out.println(Checker.checkNameValidity(tmp));
+        String tmp = input.nextLine();
+        if (tmp.equals("exit")) {
+            System.out.println("Testen beendet");
+            running = false;
+        }
+        System.out.println(Checker.checkNameValidity(tmp));
         //}
 
 
