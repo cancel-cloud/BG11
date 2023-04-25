@@ -1,8 +1,6 @@
 # 1
 
-### Bewertet den folgenden Testfall. Erfüllt dieser die Anforderungen an einen
-
-Unit-Test?
+### Bewertet den folgenden Testfall. Erfüllt dieser die Anforderungen an einen Unit-Test?
 
 ```java
 @Test
