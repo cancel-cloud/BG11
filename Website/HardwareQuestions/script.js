@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showFinalResults() {
         const totalQuestions = questions.length;
         const percentage = (score / totalQuestions) * 100;
-        alert(`Quiz finished! You got ${score} out of ${totalQuestions} questions right (${percentage.toFixed(2)}%).`);
+        alert(`Quiz finished! You got ${score} out of ${totalQuestions + 1} questions right (${percentage.toFixed(2)}%).`);
     }
 
     function resetQuiz() {
