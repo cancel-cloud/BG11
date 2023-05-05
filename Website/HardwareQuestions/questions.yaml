@@ -1,0 +1,97 @@
+questions:
+  - question: "What does CPU stand for?"
+    answers:
+      - "Central Processing Unit"
+      - "Computer Processing Unit"
+      - "Core Processing Unit"
+    correct: 0
+  - question: "What does HTML stand for?"
+    answers:
+      - "HyperText Markup Language"
+      - "HyperText Markdown Language"
+      - "HyperText Markup Link"
+    correct: 0
+  - question: "Which programming language is primarily used for web development?"
+    answers:
+      - "Java"
+      - "Python"
+      - "JavaScript"
+    correct: 2
+  - question: "What does CSS stand for?"
+    answers:
+      - "Cascading Style Sheets"
+      - "Computer Style Sheets"
+      - "Cascading Sheet System"
+    correct: 0
+  - question: "Which protocol is used to transfer files over the internet?"
+    answers:
+      - "HTTP"
+      - "FTP"
+      - "SMTP"
+    correct: 1
+  - question: "What does SQL stand for?"
+    answers:
+      - "Structured Query Language"
+      - "Simple Query Language"
+      - "Sequential Query Language"
+    correct: 0
+  - question: "What is the main purpose of an operating system?"
+    answers:
+      - "To manage computer hardware and software resources"
+      - "To create graphical user interfaces"
+      - "To protect against computer viruses"
+    correct: 0
+  - question: "What does RAM stand for?"
+    answers:
+      - "Random Access Memory"
+      - "Read Access Memory"
+      - "Random Array Memory"
+    correct: 0
+  - question: "What is the primary language used for Android app development?"
+    answers:
+      - "Swift"
+      - "Java"
+      - "Objective-C"
+    correct: 1
+  - question: "What is the primary language used for iOS app development?"
+    answers:
+      - "Java"
+      - "Objective-C"
+      - "Swift"
+    correct: 2
+  - question: "What is a common data format used for exchanging data between a client and server?"
+    answers:
+      - "JSON"
+      - "SQL"
+      - "YAML"
+    correct: 0
+  - question: "Which version control system is commonly used for tracking changes in source code?"
+    answers:
+      - "Git"
+      - "Subversion"
+      - "Mercurial"
+    correct: 0
+  - question: "What is the purpose of a 'while' loop in programming?"
+    answers:
+      - "To execute a block of code as long as a certain condition is true"
+      - "To execute a block of code a specific number of times"
+      - "To catch errors in a block of code"
+    correct: 0
+  - question: "What is the purpose of a 'for' loop in programming?"
+    answers:
+      - "To catch errors in a block of code"
+      - "To execute a block of code as long as a certain condition is true"
+      - "To execute a block of code a specific number of times"
+    correct: 2
+  - question: "What does IDE stand for?"
+    answers:
+      - "Integrated Development Environment"
+      - "Intelligent Development Environment"
+      - "Integrated Development Engine"
+    correct: 0
+  - question: "What does API stand for?"
+    answers:
+      - "Application Programming Interface"
+      - "Advanced Programming Interface"
+      - "Application Process Interface"
+    correct: 0
