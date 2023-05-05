@@ -15,7 +15,8 @@ body {
 }
 
 .question-box {
-    background-color: white;
+    background-image: url("gradient.png");
+    background-size: cover;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
