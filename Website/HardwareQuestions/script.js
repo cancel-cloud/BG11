@@ -28,7 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = 0;
     let timer = null;
     let timeLimit = 30; // seconds
+    
+    nameInput.focus();
 
+    // Start the quiz when the Enter key is pressed
+    nameInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            startQuiz();
+        }
+    });
+    
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
