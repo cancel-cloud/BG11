@@ -17,7 +17,7 @@ public class CarTest {
     public void testGasTankAfterExceedingTankRange() {
         double maxDistance = test_car.getGasTankLevel() * test_car.getMilesPerGallon();
         test_car.drive(maxDistance + 1);
-        assertEquals(0, test_car.getGasTankLevel(), .001);
+        assert (0, test_car.getGasTankLevel(), .001);
     }
 
     @Test(expected = IllegalArgumentException.class)

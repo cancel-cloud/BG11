@@ -94,7 +94,7 @@ public class StickRechner {
                 .append(" Sekunden\num ")
                 .append(x)
                 .append(" GB zu schreiben")
-                );
+        );
         System.out.println("---------------------------------");
     }
 }

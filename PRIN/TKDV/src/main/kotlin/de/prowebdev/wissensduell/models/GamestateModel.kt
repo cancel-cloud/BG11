@@ -1,5 +1,8 @@
 package de.prowebdev.wissensduell.models
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class GamestateModel(
     val gameId: Int,
     val teacherId: Int,

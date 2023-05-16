@@ -4,9 +4,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import de.prowebdev.wissensduell.interfaces.GameDAO
 import de.prowebdev.wissensduell.interfaces.StudentDAO
 import de.prowebdev.wissensduell.interfaces.TeacherDAO
-import de.prowebdev.wissensduell.storage.InMemoryGameDAO
-import de.prowebdev.wissensduell.storage.InMemoryStudentDAO
-import de.prowebdev.wissensduell.storage.InMemoryTeacherDAO
+import de.prowebdev.wissensduell.storage.*
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.http.content.*
@@ -16,9 +14,9 @@ import io.ktor.server.routing.*
 fun Application.configureRouting() {
     val mapper = YAMLMapper()
 
-    val gameDAO: GameDAO = InMemoryGameDAO()
-    val teacherDAO: TeacherDAO = InMemoryTeacherDAO()
-    val studentDAO: StudentDAO = InMemoryStudentDAO()
+    val gameDAO: GameDAO = YamlGameDAO()
+    val teacherDAO: TeacherDAO = YamlTeacherDAO()
+    val studentDAO: StudentDAO = YamlStudentDAO()
 
     routing {
 

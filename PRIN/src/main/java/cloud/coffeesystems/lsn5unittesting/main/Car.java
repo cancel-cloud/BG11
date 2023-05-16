@@ -67,7 +67,6 @@ public class Car {
     }
 
 
-
     /**
      * Drive the car an amount of miles. If not enough fuel, drive as far as fuel allows.
      * Adjust fuel levels based on amount needed to drive the distance requested.
@@ -75,8 +74,7 @@ public class Car {
      *
      * @param miles - the miles to drive
      */
-    public void drive(double miles)
-    {
+    public void drive(double miles) {
         //adjust fuel based on mpg and miles requested to drive
         double maxDistance = this.milesPerGallon * this.gasTankLevel;
         /**the double below uses some syntax called the ternary operator.

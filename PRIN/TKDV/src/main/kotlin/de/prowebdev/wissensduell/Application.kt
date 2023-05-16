@@ -7,22 +7,19 @@ import de.prowebdev.wissensduell.plugins.configureHTTP
 import de.prowebdev.wissensduell.plugins.configureMonitoring
 import de.prowebdev.wissensduell.plugins.configureRouting
 import de.prowebdev.wissensduell.plugins.configureSerialization
-import de.prowebdev.wissensduell.storage.InMemoryGameDAO
-import de.prowebdev.wissensduell.storage.InMemoryStudentDAO
-import de.prowebdev.wissensduell.storage.InMemoryTeacherDAO
+import de.prowebdev.wissensduell.storage.*
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import kotlin.system.exitProcess
 
 //fun main(args: Array<String>): Unit =
 //  io.ktor.server.netty.EngineMain.main(args)
 
-fun main() {
-
-    io.ktor.server.netty.EngineMain.main(emptyArray())
-
+fun main(args: Array<String>) {
+    io.ktor.server.netty.EngineMain.main(args = args)
 }
 
 
@@ -34,15 +31,20 @@ fun Application.module() {
     configureRouting()
 
 // Initialize DAOs
-    val gameDAO: GameDAO = InMemoryGameDAO()
-    val teacherDAO: TeacherDAO = InMemoryTeacherDAO()
-    val studentDAO: StudentDAO = InMemoryStudentDAO()
+    val gameDAO: GameDAO = YamlGameDAO()
+    val teacherDAO: TeacherDAO = YamlTeacherDAO()
+    val studentDAO: StudentDAO = YamlStudentDAO()
+
 
     routing {
         post("/teacher") {
             val name = call.receive<String>()
             val teacher = teacherDAO.createTeacher(name)
             call.respond(HttpStatusCode.Created, teacher)
+        }
+        get("/teachers") {
+            val teachers = (teacherDAO as YamlTeacherDAO).teachers
+            call.respond(HttpStatusCode.OK, teachers)
         }
         post("/student") {
             val name = call.receive<String>()
@@ -54,6 +56,11 @@ fun Application.module() {
                 call.respond(HttpStatusCode.BadRequest, "Missing or invalid gameId parameter")
             }
         }
+        get("/students") {
+            val students = (studentDAO as StudentDAO).getTotalStudents()
+            call.respond(HttpStatusCode.OK, students)
+        }
+
         post("/game") {
             val teacherId = call.parameters["teacherId"]?.toIntOrNull()
             if (teacherId != null) {
@@ -63,6 +70,11 @@ fun Application.module() {
                 call.respond(HttpStatusCode.BadRequest, "Missing or invalid teacherId parameter")
             }
         }
+        get("/games") {
+            val games = (gameDAO as GameDAO).getTotalGames()
+            call.respond(HttpStatusCode.OK, games)
+        }
+
         post("/game/{gameId}/join") {
             val gameId = call.parameters["gameId"]?.toIntOrNull()
             val studentId = call.parameters["studentId"]?.toIntOrNull()
@@ -122,5 +134,21 @@ fun Application.module() {
                 call.respond(HttpStatusCode.BadRequest, "Missing or invalid gameId parameter")
             }
         }
+        post("/shutdown") {
+            val shutdownPhrase = call.receive<String>()
+            val secretPhrase = "your-secret-phrase"
+
+            if (shutdownPhrase == secretPhrase) {
+                // Save memory stats to a file
+                saveDataToFile(gameDAO, teacherDAO, studentDAO)
+
+                // Shutdown the server gracefully
+                call.respond(HttpStatusCode.OK, "Server shutting down...")
+                exitProcess(0)
+            } else {
+                call.respond(HttpStatusCode.Forbidden, "Invalid shutdown phrase")
+            }
+        }
+
     }
 }
