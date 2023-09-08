@@ -6,8 +6,9 @@ import kotlinx.serialization.Serializable
 data class GamestateModel(
     val gameId: Int,
     val teacherId: Int,
-    var gameState: GameState,
+    var students: List<StudentModel>,
+    //var gameState: GameState,
     var currentQuestion: QuestionModel,
-    val questions: List<QuestionModel>,
-    var results: Map<Int, Int> // StudentId to score
+    var lastQuestion: Int,
+    var results: MutableMap<Int, ResultModel>
 )

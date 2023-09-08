@@ -1,0 +1,10 @@
+- gameId: 1
+  teacherId: 1
+  students: [ ]
+  currentQuestion:
+    questionId: 0
+    questionText: ''
+    options: [ ]
+    correctAnswerIndex: 0
+  lastQuestion: -1
+  results: { }

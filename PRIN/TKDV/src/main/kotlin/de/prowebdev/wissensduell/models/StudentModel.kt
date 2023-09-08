@@ -6,5 +6,7 @@ import kotlinx.serialization.Serializable
 data class StudentModel(
     val studentId: Int,
     val name: String,
-    val gameId: Int
+    val profilePicture: String,
+    val gameId: Int,
+    var points: Int = 0
 )

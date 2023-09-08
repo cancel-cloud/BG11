@@ -1,0 +1,123 @@
+- question: "What does CPU stand for?"
+  answers:
+    - "Central Processing Unit"
+    - "Computer Processing Unit"
+    - "Core Processing Unit"
+    - "Controlled Processing Unit"
+  correctAnswer: 0
+- question: "What does HTML stand for?"
+  answers:
+    - "HyperText Markup Language"
+    - "HyperText Markdown Language"
+    - "HyperText Markup Link"
+    - "HyperText Message Language"
+  correctAnswer: 0
+- question: "Which programming language is primarily used for web development?"
+  answers:
+    - "Java"
+    - "Python"
+    - "JavaScript"
+    - "Ruby"
+  correctAnswer: 2
+- question: "What does CSS stand for?"
+  answers:
+    - "Cascading Style Sheets"
+    - "Computer Style Sheets"
+    - "Cascading Sheet System"
+    - "Creative Style System"
+  correctAnswer: 0
+- question: "Which protocol is used to transfer files over the internet?"
+  answers:
+    - "HTTP"
+    - "FTP"
+    - "SMTP"
+    - "HTTPS"
+  correctAnswer: 1
+- question: "What does SQL stand for?"
+  answers:
+    - "Structured Query Language"
+    - "Simple Query Language"
+    - "Sequential Query Language"
+    - "System Query Language"
+  correctAnswer: 0
+- question: "What is the main purpose of an operating system?"
+  answers:
+    - "To manage computer hardware and software resources"
+    - "To create graphical user interfaces"
+    - "To protect against computer viruses"
+    - "To facilitate communication between devices"
+  correctAnswer: 0
+- question: "What does RAM stand for?"
+  answers:
+    - "Random Access Memory"
+    - "Read Access Memory"
+    - "Random Array Memory"
+    - "Rapid Access Memory"
+  correctAnswer: 0
+- question: "What is the primary language used for Android app development?"
+  answers:
+    - "Swift"
+    - "Java"
+    - "Objective-C"
+    - "Kotlin"
+  correctAnswer: 1
+- question: "What is the primary language used for iOS app development?"
+  answers:
+    - "Java"
+    - "Objective-C"
+    - "Swift"
+    - "C#"
+  correctAnswer: 2
+- question: "What is a common data format used for exchanging data between a client and server?"
+  answers:
+    - "JSON"
+    - "SQL"
+    - "YAML"
+    - "XML"
+  correctAnswer: 0
+- question: "Which version control system is commonly used for tracking changes in source code?"
+  answers:
+    - "Git"
+    - "Subversion"
+    - "Mercurial"
+    - "CVS"
+  correctAnswer: 0
+- question: "What is the purpose of a 'while' loop in programming?"
+  answers:
+    - "To execute a block of code as long as a certain condition is true"
+    - "To execute a block of code a specific number of times"
+    - "To catch errors in a block of code"
+    - "To iterate through a collection of items"
+  correctAnswer: 0
+- question: "What is the purpose of a 'for' loop in programming?"
+  answers:
+    - "To catch errors in a block of code"
+    - "To execute a block of code as long as a certain conditionIt appears the response was cut off. I'll continue from there:
+    - "To execute a block of code a specific number of times"
+    - "To iterate through a collection of items"
+  correctAnswer: 2
+- question: "What does IDE stand for?"
+  answers:
+    - "Integrated Development Environment"
+    - "Intelligent Development Environment"
+    - "Integrated Development Engine"
+    - "Interactive Development Environment"
+  correctAnswer: 0
+
+
+
+- question: "What is the time complexity of quicksort in the average case?"
+  answers:
+    - "O(n)"
+    - "O(n log n)"
+    - "O(n^2)"
+    - "O(log n)"
+  correctAnswer: 1
+- question: "What is the principle of encapsulation?"
+  answers:
+    - "Breaking a program into smaller, manageable functions"
+    - "Combining data and functions into a single unit"
+    - "Performing all tasks in parallel"
+    - "Repeatedly running the same function"
+  correctAnswer: 1
+# ... repeat this structure for the remaining 15 questions

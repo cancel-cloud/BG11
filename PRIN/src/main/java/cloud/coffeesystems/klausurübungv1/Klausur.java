@@ -8,7 +8,7 @@ public class Klausur {
         for (int i = name.length() - 1; i >= 0; i--) {
             System.out.print(name.charAt(i));
         }
-        
+
         String name2 = "USB-Stick22";
 
         if (name == name2) {
@@ -17,11 +17,6 @@ public class Klausur {
             System.out.println("name != name2");
         }
     }
-
-
-
-
-
 
 
 }
